@@ -3,3 +3,37 @@ main {
   margin: 0 auto;
   text-align: center;
 }
+
+form {
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form h2 {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin: 1rem 0 1rem 1.2rem;
+}
+
+form input,
+form textarea,
+form select {
+  width: 90%;
+  margin: 0 1.2rem 0 1.2rem;
+}
+
+form button {
+  width: 100%;
+  margin-top: 1rem;
+  padding-right: 1.8rem;
+  padding-left: 1.8rem;
+}
+
+section.patients {
+  padding: 1rem;
+  background: var(--tertiary-bg-color);
+}

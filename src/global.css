@@ -3,6 +3,7 @@
 :root {
   --primary-bg-color: #fef6e4;
   --secondary-bg-color: #f3d2c1;
+  --tertiary-bg-color: #8bd3dd;
   --headline-color: #001858;
   --paragraph-color: #172c66;
   --button-bg-color: #f582ae;
@@ -37,6 +38,7 @@ textarea {
   border: none;
   border-radius: 3px;
   color: var(--text-color);
+  background-color: var(--secondary-bg-color);
 }
 
 h1,
@@ -54,14 +56,20 @@ button {
   transition: 500ms;
 }
 
-button:hover {
-}
-
 button:active {
   transform: translateY(5px) scale(0.8);
 }
 
-input,
-textarea {
-  background-color: var(--secondary-bg-color);
+hr {
+  border-top: 2px dotted var(--tertiary-bg-color);
+}
+
+fieldset {
+  border: 2px dotted var(--tertiary-bg-color);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
