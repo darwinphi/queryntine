@@ -1,3 +1,3 @@
 # 🏥 `<Queryntine/>`
 
-An app created with React and Typescript
+Track people's quarantine period. Created with React and Typescript.
