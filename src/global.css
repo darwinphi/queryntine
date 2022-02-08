@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+
+:root {
+  --primary-bg-color: #fef6e4;
+  --secondary-bg-color: #f3d2c1;
+  --headline-color: #001858;
+  --paragraph-color: #172c66;
+  --button-bg-color: #f582ae;
+  --text-color: #001858;
+  --font-family: "PT Mono", monospace;
+  --font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--primary-bg-color);
+  color: var(--paragraph-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--headline-color);
+}
+
+button {
+  background-color: var(--button-bg-color);
+  cursor: pointer;
+  transition: 500ms;
+}
+
+button:hover {
+}
+
+button:active {
+  transform: translateY(5px) scale(0.8);
+}
+
+input,
+textarea {
+  background-color: var(--secondary-bg-color);
+}
