@@ -1,5 +1,4 @@
 import { IPatients } from "../App";
-import "../PatientsTable.css";
 import Status from "./Status";
 
 const PatientsTable = ({ patients }: IPatients) => {
