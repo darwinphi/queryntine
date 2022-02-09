@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import PatientForm from "./components/PatientForm";
-import PatientsList from "./components/PatientsList";
+import PatientsTable from "./components/PatientsTable";
 import { useLocalStorage } from "@rehooks/local-storage";
 
 const daysQuarantine = 14;
@@ -45,7 +45,7 @@ function App() {
   return (
     <main>
       <Header />
-      <PatientsList patients={patients} />
+      <PatientsTable patients={patients} />
       <PatientForm patients={patients} setPatients={setPatients} />
     </main>
   );

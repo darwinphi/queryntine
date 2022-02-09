@@ -73,3 +73,20 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+table {
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px dotted #001858;
+  text-align: left;
+  padding: 8px;
+}

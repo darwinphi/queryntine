@@ -89,9 +89,9 @@ const PatientForm = ({ patients, setPatients }: IProps) => {
       <label>Disease</label>
       <select onChange={handleChange} name="disease" required>
         <option value="">Choose an option --</option>
-        <option value="sars-cov-2">Covid-19</option>
-        <option value="sars-cov">SARS</option>
-        <option value="mers-cov">MERS</option>
+        <option value="covid-19">Covid-19</option>
+        <option value="sars">SARS</option>
+        <option value="mers">MERS</option>
       </select>
       <button type="submit" onClick={handleSave}>
         Save
