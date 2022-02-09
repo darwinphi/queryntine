@@ -3,7 +3,18 @@ import { IPatients as Props, endDate } from "../App";
 
 interface IProps {
   patients: Props["patients"];
-  setPatients: React.Dispatch<React.SetStateAction<Props["patients"]>>;
+  setPatients: (
+    newValue:
+      | {
+          name: string;
+          age: number;
+          address: string;
+          disease: string;
+          dateStarted: Date;
+          dateEnded: Date;
+        }[]
+      | null
+  ) => void;
 }
 
 const PatientForm = ({ patients, setPatients }: IProps) => {
@@ -40,6 +51,13 @@ const PatientForm = ({ patients, setPatients }: IProps) => {
         dateEnded: endDate,
       },
     ]);
+
+    setPatient({
+      name: "",
+      age: "",
+      address: "",
+      disease: "",
+    });
   };
 
   return (

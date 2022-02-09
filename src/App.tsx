@@ -1,8 +1,8 @@
-import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import PatientForm from "./components/PatientForm";
 import PatientsList from "./components/PatientsList";
+import { useLocalStorage } from "@rehooks/local-storage";
 
 const daysQuarantine = 14;
 export const endDate = new Date(
@@ -40,9 +40,7 @@ export interface IPatients {
 }
 
 function App() {
-  const [patients, setPatients] = useState<IPatients["patients"]>(patientsList);
-
-  patients.map((patient) => console.log(patient.name));
+  const [patients, setPatients] = useLocalStorage("patientsKey", patientsList);
 
   return (
     <main>
