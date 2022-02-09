@@ -10,8 +10,8 @@ interface IProps {
           age: number;
           address: string;
           disease: string;
-          dateStarted: Date;
-          dateEnded: Date;
+          startDate: Date;
+          endDate: Date;
         }[]
       | null
   ) => void;
@@ -47,8 +47,8 @@ const PatientForm = ({ patients, setPatients }: IProps) => {
         age: parseInt(patient.age),
         address: patient.address,
         disease: patient.disease,
-        dateStarted: new Date(),
-        dateEnded: endDate,
+        startDate: new Date(),
+        endDate: endDate,
       },
     ]);
 

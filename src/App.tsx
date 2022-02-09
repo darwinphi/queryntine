@@ -15,16 +15,16 @@ const patientsList = [
     age: 22,
     address: "Manila",
     disease: "covid-19",
-    dateStarted: new Date(),
-    dateEnded: endDate,
+    startDate: new Date(),
+    endDate: endDate,
   },
   {
     name: "Jane Doe",
     age: 18,
     address: "Cavite",
     disease: "covid-19",
-    dateStarted: new Date(),
-    dateEnded: endDate,
+    startDate: new Date(),
+    endDate: endDate,
   },
 ];
 
@@ -34,8 +34,8 @@ export interface IPatients {
     age: number;
     address: string;
     disease: string;
-    dateStarted: Date;
-    dateEnded: Date;
+    startDate: Date;
+    endDate: Date;
   }[];
 }
 
